@@ -42,7 +42,7 @@
         <header class="inner">
           <a id="forkme_banner" href="https://github.com/jimmylee9527" title="返回">GitHub Pages</a>
           <h1 id="project_title">李晶简历</h1>
-          <h2 id="project_tagline">意向：高级产品经理/项目经理/产品总监</h2>
+          <h2 id="project_tagline">意向：产品总监/项目经理/高级产品经理</h2>
           <a class="img animated bounceIn"></a>
         </header>
     </div>
@@ -55,7 +55,18 @@
         <ul>
         	<li>姓名：&nbsp;李晶</li>
 		<li>性别：&nbsp;男</li>
-		<li>年龄：&nbsp;31岁</li>
+		<li>年龄：
+			<script type="text/javascript">
+				var birth='1984-06-06';
+				birth = Date.parse(birth.replace('/-/g', "/"));
+					if (birth) {
+						var year = 1000 * 60 * 60 * 24 * 365;
+						var now = new Date();
+						var birthday = new Date(birth);
+						var age = parseInt((now - birthday) / year);
+					}
+				document.write(age);
+			</script>岁</li>
 		<li>户籍：&nbsp;深圳市</li>
 		<li>电话：&nbsp;15507588406</li>
 		<li>邮箱：&nbsp;jimmylee9527@qq.com</li>
